@@ -13,4 +13,4 @@ for tr in trs:
     rank = tr.select_one('td.number').text[0:2].strip()
     title = tr.select_one('td.info > a.title.ellipsis').text.strip()
     artist = tr.select_one('td.info > a.artist.ellipsis').text
-    print(rank, title, artist,'머지')
+    print(rank, title, artist)
